@@ -3,7 +3,7 @@
 Build a smart contracts to automate many of the institutions’ financial processes and features.
 
 <br>
-Here, to automate the creation of joint savings accounts, we will create a solidity smart contract that accepts two user addresses that are then able to control a joint savings account. 
+Here we are automating the creation of joint savings accounts. We will create a solidity smart contract that accepts two user addresses that are then able to control a joint savings account. 
 
 Our smart contract will use ether management functions to implement various requirements from the financial institution to provide the features of the joint savings account.
 
