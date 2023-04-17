@@ -34,24 +34,24 @@ We used the following Ethereum addresses:
 
 After successfully depositing 50 ether as initial funds into our contract, to test the contract’s withdrawal functionality we perfromed 3 transactions by withdrawing:
 
-    Transaction 1: 5 ether into accountOne 
+    Transaction 1: 5 ether into accountOne
     Transaction 2: 10 ether into accountTwo
     Transaction 3: 1 ether into accountOne
 
-After each transaction, use the contractBalance function to verify that the funds were withdrawn from your contract. Also, we use the lastToWithdraw and lastWithdrawAmount functions to verify that the address and amount were correct.
+After each transaction, use the `contractBalance` function to verify that the funds were withdrawn from our contract. Also, we use the `lastToWithdraw` and `lastWithdrawAmount` functions to verify that the address and amount were correct.
 
 <br>
 
-* Transaction 1: 5 ether into accountOne - 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
+* Transaction 1: 5 ether into `accountOne`: 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
 
 ![A screenshot of the result.](Execution_Results/Transaction1.png)
 
 
-* Transaction 2: 10 ether into accountTwo - 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0
+* Transaction 2: 10 ether into `accountTwo`: 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0
 
 ![A screenshot of the result.](Execution_Results/Transaction2.png)
 
-* Transaction 3: 1 ether into accountOne - 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
+* Transaction 3: 1 ether into `accountOne`: 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
 
 ![A screenshot of the result.](Execution_Results/Transaction3.png)
 
