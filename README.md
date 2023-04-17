@@ -16,7 +16,10 @@ We will do the following in this Smart Contract:
 3. Interact with our deployed smart contract to transfer and withdraw funds.
 
 <br>
-Using the setAccounts function to define the authorized Ethereum address that will be able to withdraw funds from our contract. 
+
+## Set up for test run
+
+Using the `setAccounts` function to define the authorized Ethereum address that will be able to withdraw funds from our contract. 
 
 We used the following Ethereum addresses:
 
@@ -26,6 +29,8 @@ We used the following Ethereum addresses:
 ![A screenshot of the result.](Execution_Results/Initialize.png)
 
 <br>
+
+## Transacations
 
 After successfully depositing 50 ether as initial funds into our contract, to test the contract’s withdrawal functionality we perfromed 3 transactions by withdrawing:
 
@@ -37,15 +42,29 @@ After each transaction, use the contractBalance function to verify that the fund
 
 <br>
 
-Transaction 1: 5 ether into accountOne - 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
+* Transaction 1: 5 ether into accountOne - 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
 
 ![A screenshot of the result.](Execution_Results/Transaction1.png)
 
 
-Transaction 2: 10 ether into accountTwo - 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0
+* Transaction 2: 10 ether into accountTwo - 0x7A1f3dFAa0a4a19844B606CD6e91d693083B12c0
 
 ![A screenshot of the result.](Execution_Results/Transaction2.png)
 
-Transaction 3: 1 ether into accountOne - 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
+* Transaction 3: 1 ether into accountOne - 0x0c0669Cd5e60a6F4b8ce437E4a4A007093D368Cb
 
 ![A screenshot of the result.](Execution_Results/Transaction3.png)
+
+
+<br>
+
+## Error Handling
+
+* Check if the `balance` is sufficient to accomplish the withdraw operation. If there are insufficient funds, the text `Insufficient funds!` is returned.
+
+![A screenshot of the result.](Execution_Results/Error1.png)
+
+
+* Checks if the `recipient` is equal to either `accountOne` or `accountTwo`. The `requiere` statement returns the text `"You don't own this account!"` if it does not.
+
+![A screenshot of the result.](Execution_Results/Error2.png)
